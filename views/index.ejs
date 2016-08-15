@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tim Bytes</title>
+  <style> 
+	ul {
+	color: red;
+	} 
+
+	p {
+		font-family : Verdana, Geneva, sans-serif;	
+	}
+
+</style>
+
+</head>
+<body>
+	<h2 align="center">Tim Bytes</h2>
+ 	<br><br>	
+  	<p class="blogs">
+  		<% for(var i=0; i<blogs.length; i++) {%>
+     			<h3 align="center"><span><%= blogs[i].subject %></span></h3>
+      			<p align="center"><span><%= blogs[i].body %></span></p>
+			<p align="center">_____________________________________________________________________________________________________________________________________________________________________________________________</p>
+  		<% } %>
+  	</p>
+
+<!-- ... -->
+<script src="main.js"></script>
+</body>
+</html>
+
